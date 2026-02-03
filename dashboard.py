@@ -15,7 +15,7 @@ st.title("Bike Sharing Dashboard")
 # ==============================
 # LOAD DATA
 # ==============================
-DATA_PATH = "data.csv"
+DATA_PATH = "main_data.csv"
 
 if not os.path.exists(DATA_PATH):
     st.error(f"File {DATA_PATH} tidak ditemukan. Pastikan data.csv ada di folder yang sama.")
