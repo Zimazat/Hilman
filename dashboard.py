@@ -30,8 +30,8 @@ if df["season"].dtype != "object":
     })
 
 # Mapping bulan jika masih numerik
-if df["month"].dtype != "object":
-    df["month"] = df["season"].map({
+if df["mounth"].dtype != "object":
+    df["mounth"] = df["season"].map({
         1: "Januari",
         2: "Februari",
         3: "Maret",
