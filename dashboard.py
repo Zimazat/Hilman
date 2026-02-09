@@ -82,7 +82,7 @@ if weather_option != "All":
 # TITLE
 # =========================
 st.title("🚲 Dashboard Penyewaan Sepeda")
-st.write("Dashboard ini menampilkan analisis penyewaan sepeda periode Januari–Juni 2011.")
+st.write("Dashboard ini menampilkan analisis penyewaan sepeda periode 2011-2012.")
 
 # =========================
 # METRICS
@@ -106,7 +106,7 @@ monthly_avg = (
     filtered_df
     .groupby("month_name")["cnt"]
     .mean()
-    .reindex(["Januari", "Februari", "Maret", "April", "Mei", "Juni"])
+    .reindex(["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"])
 )
 
 if monthly_avg.isna().all():
