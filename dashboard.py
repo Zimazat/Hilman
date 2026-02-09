@@ -117,7 +117,7 @@ else:
     ax1.set_xlabel("Bulan")
     ax1.set_ylabel("Rata-rata Penyewaan")
     ax1.set_title("Rata-rata Penyewaan per Bulan")
-    plt.xticks(rotation=90, ha="left")
+    plt.xticks(rotation=90, ha="right")
     st.pyplot(fig1)
     plt.close()
 
